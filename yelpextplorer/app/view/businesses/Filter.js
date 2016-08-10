@@ -6,14 +6,14 @@ Ext.define('YelpExtplorer.view.businesses.Filter', {
         fieldLabel: 'City',
         labelWidth: 26,
         bind: {
-            value: '{city}'
+            value: '{typedCity}'
         }
     }, ' ', {
         xtype: 'textfield',
         fieldLabel: 'Category',
         labelWidth: 60,
         bind: {
-            value: '{category}'
+            value: '{typedCategory}'
         }
     }],
     padding: 4

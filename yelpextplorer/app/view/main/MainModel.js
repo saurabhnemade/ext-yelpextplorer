@@ -2,24 +2,17 @@ Ext.define('YelpExtplorer.view.main.MainModel', {
     extend: 'Ext.app.ViewModel',
     alias: 'viewmodel.main',
 
+    requires:['YelpExtplorer.model.Business'],
+
     data: {
         city: null,
-        category: null,
-        location: {
-            // Bismark, ND          
-            latitude: 46.809076,
-            longitude: -100.7670546
+        category: 'pizza',
+        city: 'Amsterdam'
+    },
+    stores: {
+        businesses: { 
+            model: 'YelpExtplorer.model.Business',
+            pageSize: 20 // Yelp limits results to 20 at a time
         }
     }
-
-    /*
-    stores: {
-        businesses: {
-            model: 'YelpExtplorer.model.Business',
-            autoLoad: true,
-            pageSize: 200,
-            remoteFilter: true,
-            sorters: ['name']
-        }
-    }*/
 });
