@@ -3,6 +3,8 @@ Ext.define('YelpExtplorer.view.main.MainModel', {
     alias: 'viewmodel.main',
 
     data: {
+        city: null,
+        category: null,
         location: {
             // Bismark, ND          
             latitude: 46.809076,
