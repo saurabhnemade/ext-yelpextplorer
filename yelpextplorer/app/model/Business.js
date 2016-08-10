@@ -1,6 +1,6 @@
 Ext.define('YelpExtplorer.model.Business', {
     extend: 'Ext.data.Model',
-    requires: ['Ext.data.proxy.JsonP'],
+    requires: ['Ext.data.proxy.Ajax'],
     fields: [{
         name: 'latitude',
         mapping: 'location.coordinate.latitude'

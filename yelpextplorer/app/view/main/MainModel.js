@@ -5,7 +5,10 @@ Ext.define('YelpExtplorer.view.main.MainModel', {
     requires:['YelpExtplorer.model.Business'],
 
     data: {
-        city: null,
+        location: null,
+        business: null,
+        typedCity: null,
+        typedCategory: null,
         category: 'pizza',
         city: 'Amsterdam'
     },
