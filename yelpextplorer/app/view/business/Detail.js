@@ -16,6 +16,25 @@ Ext.define('YelpExtplorer.view.business.Detail', {
 
     padding: 20,
 
+    tbar: [{
+        xtype: 'button',
+        text: 'Edit',
+        handler: 'onEditClick',
+        bind: {
+            disabled: '{!business}'
+        }
+    }],
+
+    bbar: {
+        xtype: 'component',
+        height: 25,
+        width: 155,
+        html: [
+            '<a href="http://www.yelp.com" target="_blank">',
+            '<img src="resources/images/Powered_By_Yelp_Red.png"/></a>'
+        ]
+    },
+
     tpl: [
         '<tpl if="this.isData(values)">',
         '<div>',

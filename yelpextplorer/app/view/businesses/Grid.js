@@ -26,6 +26,7 @@ Ext.define('YelpExtplorer.view.businesses.Grid', {
             }
         }, {
             text: 'Reviews',
+            xtype: 'numbercolumn',
             dataIndex: 'review_count',
             width: 60,
             align: 'right'
