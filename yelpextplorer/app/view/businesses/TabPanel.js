@@ -23,7 +23,8 @@ Ext.define("YelpExtplorer.view.businesses.TabPanel", {
             store: '{businesses}',
             selection: '{business}'
         }
-    }, {
+    }, 
+    , {
         title: 'Grid',
         xtype: 'businessesgrid'
     }]

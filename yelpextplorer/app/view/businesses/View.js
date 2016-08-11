@@ -4,7 +4,7 @@ Ext.define('YelpExtplorer.view.businesses.View', {
 
 
     scrollable: true,
-    itemTpl: '<figure><img src="{image_url}"><figcaption>{name}</figcaption></figure>',
+    itemTpl: '<figure><img src="{image_url}"><figcaption>{name:ellipsis(20)}</figcaption></figure>',
     itemCls: 'businessesview',
     overItemCls: 'over',
     selectedItemCls: 'selected'
