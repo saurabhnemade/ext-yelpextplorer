@@ -879,6 +879,7 @@ $include-ext-window-window: dynamic(true);;
 $include-shared-geocode: dynamic(true);;
 $include-shared-view-map: dynamic(true);;
 $include-yelpextplorer-application: dynamic(true);;
+$include-yelpextplorer-model-business: dynamic(true);;
 $include-yelpextplorer-view-banner: dynamic(true);;
 $include-yelpextplorer-view-business-detail: dynamic(true);;
 $include-yelpextplorer-view-business-detailcontroller: dynamic(true);;

@@ -13,11 +13,16 @@ Ext.define("YelpExtplorer.view.businesses.TabPanel", {
         xtype: 'businessesmap',
         bind: {
             location: '{location}',
-            store: '{businesses}'
+            store: '{businesses}',
+            selection: '{business}'
         }
     }, {
         title: 'View',
-        xtype: 'businessesview'
+        xtype: 'businessesview',
+        bind: {
+            store: '{businesses}',
+            selection: '{business}'
+        }
     }, {
         title: 'Grid',
         xtype: 'businessesgrid'

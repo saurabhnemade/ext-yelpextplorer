@@ -15,6 +15,7 @@ Ext.define('YelpExtplorer.view.main.MainModel', {
     stores: {
         businesses: { 
             model: 'YelpExtplorer.model.Business',
+            sorters: ['name'],
             pageSize: 20 // Yelp limits results to 20 at a time
         }
     }

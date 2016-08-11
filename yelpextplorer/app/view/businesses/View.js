@@ -1,5 +1,11 @@
-Ext.define('YelpExtplorer.view.businesses.View', { 
-    extend: 'Ext.panel.Panel',
+Ext.define('YelpExtplorer.view.businesses.View', {
+    extend: 'Ext.view.View',
     xtype: 'businessesview',
-    html: 'businessesview'
+
+
+    scrollable: true,
+    itemTpl: '<figure><img src="{image_url}"><figcaption>{name}</figcaption></figure>',
+    itemCls: 'businessesview',
+    overItemCls: 'over',
+    selectedItemCls: 'selected'
 });

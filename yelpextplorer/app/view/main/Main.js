@@ -30,6 +30,9 @@ Ext.define('YelpExtplorer.view.main.Main', {
     }, {
         region: 'east',
         xtype: 'businessdetail',
+        bind: {
+            data: '{business}'
+        },
         width: 130
     }]
 
