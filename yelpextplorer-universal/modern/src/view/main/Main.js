@@ -13,6 +13,10 @@ Ext.define('YelpExtplorer.view.main.Main', {
         type: 'main-main'
     },
 
+    listeners: {
+        pop: 'onPop'
+    },
+
     config: {
         items: [{
             title: 'YelpExtplorer',
