@@ -1,10 +1,10 @@
-
-Ext.define('YelpExtplorer.view.main.Main',{
-    extend: 'Ext.Container',
-
+Ext.define('YelpExtplorer.view.main.Main', {
+    extend: 'Ext.navigation.View',
+    xtype: 'app-main',
     requires: [
         'YelpExtplorer.view.main.MainController',
-        'YelpExtplorer.view.main.MainModel'
+        'YelpExtplorer.view.main.MainModel',
+        'YelpExtplorer.view.businesses.TabPanel'
     ],
 
     controller: 'main-main',
@@ -12,6 +12,18 @@ Ext.define('YelpExtplorer.view.main.Main',{
         type: 'main-main'
     },
 
-    xtype:'app-main',
-    html: 'Hello, World!!'
+    config: {
+        items: [{
+            title: 'YelpExtplorer',
+            layout: 'fit',
+            xtype: 'container',
+            items: [{
+                xtype: 'toolbar',
+                docked: 'top',
+                title: 'City/category filter goes here'
+            }, {
+                xtype: 'businessestabpanel'
+            }]
+        }]
+    }
 });
