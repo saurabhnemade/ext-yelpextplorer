@@ -4,7 +4,8 @@ Ext.define('YelpExtplorer.view.main.Main', {
     requires: [
         'YelpExtplorer.view.main.MainController',
         'YelpExtplorer.view.main.MainModel',
-        'YelpExtplorer.view.businesses.TabPanel'
+        'YelpExtplorer.view.businesses.TabPanel',
+        'YelpExtplorer.view.businesses.Filter'
     ],
 
     controller: 'main-main',
@@ -18,9 +19,8 @@ Ext.define('YelpExtplorer.view.main.Main', {
             layout: 'fit',
             xtype: 'container',
             items: [{
-                xtype: 'toolbar',
-                docked: 'top',
-                title: 'City/category filter goes here'
+                xtype: 'businessesfilter',
+                docked: 'top'
             }, {
                 xtype: 'businessestabpanel'
             }]
