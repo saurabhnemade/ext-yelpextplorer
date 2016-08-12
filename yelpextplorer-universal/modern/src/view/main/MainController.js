@@ -8,7 +8,12 @@ Ext.define('YelpExtplorer.view.main.MainController', {
     },
     onBusinessSelect: function(business) {
         if (business) {
-            console.log(business.data.name);
+            this.getView().push({
+                xtype: 'businessdetail',
+                data: business.data,
+                title: 'Business Detail'
+            });
         }
     }
+
 });
