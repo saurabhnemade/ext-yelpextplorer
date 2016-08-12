@@ -23,11 +23,21 @@ Ext.define('YelpExtplorer.view.businesses.TabPanel', {
                 location: '{location}',
                 store: '{businesses}',
                 selection: '{business}'
+            },
+            listeners: {
+                itemtap: 'onBusinessesMapItemTap'
             }
         }, {
             title: 'List',
             xtype: 'businesseslist',
-            iconCls: 'x-fa fa-list'
+            iconCls: 'x-fa fa-list',
+            bind: {
+                store: '{businesses}',
+                selection: '{business}'
+            },
+            listeners: {
+                itemtap: 'onBusinessesListItemTap'
+            }
         }]
     }
 });

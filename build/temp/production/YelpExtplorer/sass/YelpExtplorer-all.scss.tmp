@@ -565,6 +565,7 @@ $include-shared-geocode: dynamic(true);;
 $include-shared-view-map: dynamic(false);;
 $include-yelpextplorer-application: dynamic(true);;
 $include-yelpextplorer-model-business: dynamic(true);;
+$include-yelpextplorer-view-business-detail: dynamic(true);;
 $include-yelpextplorer-view-businesses-filter: dynamic(true);;
 $include-yelpextplorer-view-businesses-list: dynamic(true);;
 $include-yelpextplorer-view-businesses-map: dynamic(true);;
