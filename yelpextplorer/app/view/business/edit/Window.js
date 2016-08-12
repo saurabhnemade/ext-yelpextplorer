@@ -11,10 +11,10 @@ Ext.define("YelpExtplorer.view.business.edit.Window", {
     viewModel: {
         type: 'business-edit-window'
     },
+
     resizable: false,
     bodyPadding: 8,
     modal: true,
-
     layout: 'fit',
 
     items: [{
