@@ -35,6 +35,6 @@
   background-color: white;
 }
 
-.x-ios .x-button-back {
-  padding-right: 20px;
+.x-button-back {
+  padding-right: 20px !important;
 }

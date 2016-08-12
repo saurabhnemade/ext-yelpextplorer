@@ -42,7 +42,6 @@ Ext.define('YelpExtplorer.view.main.MainController', {
                 }
             },
             edit: true, // To flag it when popping
-            title: 'Edit Business'
         });
     },
 
