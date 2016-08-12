@@ -1,6 +1,5 @@
-Ext.define('YelpExtplorer.view.main.MainController', {
-    extend: 'YelpExtplorer.view.main.MainControllerShared',
-    alias: 'controller.main',
+Ext.define('YelpExtplorer.view.main.MainControllerShared', {
+    extend: 'Ext.app.ViewController',
 
     requires: ['Shared.Geocode'],
 
@@ -56,3 +55,4 @@ Ext.define('YelpExtplorer.view.main.MainController', {
     }
 
 });
+

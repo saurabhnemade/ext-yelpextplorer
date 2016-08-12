@@ -1,5 +1,5 @@
-Ext.define('YelpExtplorer.view.main.MainModel', {
-    extend: 'YelpExtplorer.view.main.MainModelShared',
+Ext.define('YelpExtplorer.view.main.MainModelShared', {
+    extend: 'Ext.app.ViewModel',
     alias: 'viewmodel.main',
 
     requires:['YelpExtplorer.model.Business'],
